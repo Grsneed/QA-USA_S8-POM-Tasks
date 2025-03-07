@@ -10,7 +10,7 @@ class UrbanRoutesPage:
     DRIVE_ICON_LOCATOR = (By.XPATH, '(//img[@src="/static/media/car.8a2b1ff5.svg"])[2]')
     BOOK_BUTTON_LOCATOR = (By.XPATH, '//button[@class="button round"]')
     CAMPING_LOCATOR = (By.XPATH, '//div[contains(text(),"Camping")]')
-    AUDI_TEXT_LOCATOR = (By.XPATH, '//div[contains(text(),"Audi A3 Sedan")]')
+    AUDI_TEXT_LOCATOR = (By.XPATH, '//div[@class="drive-preview-title"]')
     ADD_DRIVER_LICENSE_LOCATOR = (By.XPATH, '(//div[contains(text(),"Add a driver")])[2]')
     FIRST_NAME_LOCATOR = (By.ID, 'firstName')
     LAST_NAME_LOCATOR = (By.ID, 'lastName')
@@ -18,7 +18,7 @@ class UrbanRoutesPage:
     NUMBER_LOCATOR = (By.ID, 'number')
     ADD_BUTTON_LOCATOR = (By.XPATH, '//form/div[2]/button[1]')
     ADD_A_DRIVER_LICENCE_TITLE_LOCATOR = (By.XPATH, '//div[contains(text(),"Add a driver")]')
-    VERIFICATION_TEXT_LOCATOR = (By.XPATH, '//div[contains(text(),"Thank you")]')
+    VERIFICATION_TEXT_LOCATOR = (By.XPATH, '//div[@class="section active"]//div[@style="margin-bottom: 30px;"]')
 
     def __init__(self, driver):
         self.driver = driver  # Initialize the driver
