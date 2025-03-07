@@ -8,8 +8,8 @@ class UrbanRoutesPage:
     TO_LOCATOR = (By.ID, 'to')
     CUSTOM_OPTION_LOCATOR = (By.XPATH, '//div[text()="Custom"]')
     BIKE_ICON_LOCATOR = (By.XPATH, '//img[@src="/static/media/bike.fb41c762.svg"]')
-    BIKE_TEXT_LOCATOR = (By.XPATH, '//div[contains(text(),"Bike")]')
-    DURATION_TEXT_LOCATOR = (By.XPATH, '//div[contains(text(),"Duration")]')
+    BIKE_TEXT_LOCATOR = (By.XPATH, '//div[@class="results-text"]//div[@class="text"]')
+    DURATION_TEXT_LOCATOR = (By.XPATH, '//div[@class="results-text"]//div[@class="duration"]')
 
     def __init__(self, driver):
         self.driver = driver  # Initialize the driver
